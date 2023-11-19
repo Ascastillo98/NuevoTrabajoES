@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class animal{
         public int id;
         public String especie;
