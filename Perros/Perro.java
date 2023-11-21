@@ -1,4 +1,7 @@
+import java.util.logging.Logger;
+
 public class Perro{
+        Logger logger = Logger.getLogger(getClass().getName());
         private int id;
         private String especie;
         private int edad;
@@ -12,9 +15,9 @@ public class Perro{
             peso = p;
         }
         public void verPerro(){
-            System.out.println("Especie: " + especie);
-            System.out.println("edad: " + edad);
-            System.out.println("color: " + color);
-            System.out.println("peso: " + peso);
+            logger.info("Especie: " + especie);
+            logger.info("edad: " + edad);
+            logger.info("color: " + color);
+            logger.info("peso: " + peso);
         }
 }
