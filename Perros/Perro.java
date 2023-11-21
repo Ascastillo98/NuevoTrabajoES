@@ -15,9 +15,9 @@ public class Perro{
             peso = p;
         }
         public void verPerro(){
-            logger.info("Especie: " + especie);
-            logger.info("edad: " + edad);
-            logger.info("color: " + color);
-            logger.info("peso: " + peso);
+            logger.info("Especie: ", especie);
+            logger.info("edad: ", edad);
+            logger.info("color: ", color);
+            logger.info("peso: ", peso);
         }
 }
