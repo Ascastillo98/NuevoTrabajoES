@@ -1,18 +1,18 @@
-public class caballo{
+public class Oso{
     Logger logger = Logger.getLogger(getClass().getName());
-        public int id;
-        public String especie;
-        public int edad;
-        public String color;
-        public int peso;
-        public caballo(int i, String s, int e, String c, int p) {
+        private int id;
+        private String especie;
+        private int edad;
+        private String color;
+        private int peso;
+        public Oso(int i, String s, int e, String c, int p) {
             id = i;
             especie = s;
             edad = e;
             color = c;
             peso = p;
         }
-        public void vercaballo(){
+        public void verOso(){
             logger.info("Especie: ", especie);
             logger.info("edad: ", edad);
             logger.info("color: ", color);
