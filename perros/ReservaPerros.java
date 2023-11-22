@@ -5,10 +5,10 @@ import java.util.logging.Logger;
 
 public class ReservaPerros{
         Logger logger = Logger.getLogger(getClass().getName());
-        Perro[] PerrosEnReserva = new Perro[50];
+        Perro[] perrosReserva = new Perro[50];
         int numPerros = 0;
 
-        public void añadirPerro(){
+        public void AñadirPerro(){
             Scanner scanner = new Scanner(System.in);
 
             logger.info("Ingrese los datos del Perro:");
