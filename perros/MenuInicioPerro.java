@@ -19,7 +19,7 @@ public class MenuInicioPerro {
 
         switch (opcion) {
             case 1:
-                r.añadirPerro();
+                r.nuevoPerro();
                 break;
             case 2:
                 r.liberarPerro();

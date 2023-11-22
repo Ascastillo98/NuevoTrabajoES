@@ -8,7 +8,7 @@ public class ReservaPerros{
         Perro[] perrosReserva = new Perro[50];
         int numPerros = 0;
 
-        public void añadirPerro(){
+        public void nuevoPerro(){
             Scanner scanner = new Scanner(System.in);
 
             logger.info("Ingrese los datos del Perro:");
