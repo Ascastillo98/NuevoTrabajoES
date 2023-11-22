@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class menuInicioCaballo {
-
+    
     public static void main(String[] args) {
         reservaCaballos r = new reserva();
         Scanner s = new Scanner(System.in);
