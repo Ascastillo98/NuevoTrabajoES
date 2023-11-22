@@ -1,28 +1,32 @@
+package osos;
+
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class ReservaOsos{
-        Oso[] ososReserva = new Oso[50];
+        Logger logger = Logger.getLogger(getClass().getName());
+        Oso[] OsosReserva = new Oso[50];
         int numOsos = 0;
 
         public void nuevoOso(){
             Scanner scanner = new Scanner(System.in);
 
-            System.out.println("Ingrese los datos del Oso:");
-            System.out.print("ID: ");
+            logger.info("Ingrese los datos del Oso:");
+            logger.info("ID: ");
             int id = scanner.nextInt();
             scanner.nextLine();  // Consumir la nueva línea pendiente después de nextInt()
 
-            System.out.print("Especie: ");
+            logger.info("Especie: ");
             String especie = scanner.nextLine();
 
-            System.out.print("Edad: ");
+            logger.info("Edad: ");
             int edad = scanner.nextInt();
             scanner.nextLine();  // Consumir la nueva línea pendiente después de nextInt()
 
-            System.out.print("Color: ");
+            logger.info("Color: ");
             String color = scanner.nextLine();
 
-            System.out.print("Peso: ");
+            logger.info("Peso: ");
             int peso = scanner.nextInt();
 
             // Crear un objeto Oso con los datos ingresados
@@ -34,7 +38,7 @@ public class ReservaOsos{
 
         public void liberarOso(){
 
-            System.out.print("ID del Oso: ");
+            logger.info("ID del Oso: ");
             Scanner scanner = new Scanner(System.in);
             int id = scanner.nextInt();
 

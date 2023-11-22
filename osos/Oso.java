@@ -1,3 +1,6 @@
+package osos;
+import java.util.logging.Logger;
+
 public class Oso{
     Logger logger = Logger.getLogger(getClass().getName());
         private int id;
