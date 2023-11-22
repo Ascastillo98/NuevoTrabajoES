@@ -5,7 +5,7 @@ import java.util.logging.Logger;
 
 public class ReservaOsos{
         Logger logger = Logger.getLogger(getClass().getName());
-        Oso[] OsosReserva = new Oso[50];
+        Oso[] ososReserva = new Oso[50];
         int numOsos = 0;
 
         public void nuevoOso(){
