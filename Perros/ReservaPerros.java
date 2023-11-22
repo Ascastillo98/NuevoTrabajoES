@@ -1,28 +1,32 @@
+package perro;
+
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class ReservaPerros{
+        Logger logger = Logger.getLogger(getClass().getName());
         Perro[] PerrosEnReserva = new Perro[50];
         int numPerros = 0;
 
         public void añadirPerro(){
             Scanner scanner = new Scanner(System.in);
 
-            System.out.println("Ingrese los datos del Perro:");
-            System.out.print("ID: ");
+            logger.info("Ingrese los datos del Perro:");
+            logger.info("ID: ");
             int id = scanner.nextInt();
             scanner.nextLine();  // Consumir la nueva línea pendiente después de nextInt()
 
-            System.out.print("Especie: ");
+            logger.info("Especie: ");
             String especie = scanner.nextLine();
 
-            System.out.print("Edad: ");
+            logger.info("Edad: ");
             int edad = scanner.nextInt();
             scanner.nextLine();  // Consumir la nueva línea pendiente después de nextInt()
 
-            System.out.print("Color: ");
+            logger.info("Color: ");
             String color = scanner.nextLine();
 
-            System.out.print("Peso: ");
+            logger.info("Peso: ");
             int peso = scanner.nextInt();
 
             // Crear un objeto Perro con los datos ingresados
@@ -34,7 +38,7 @@ public class ReservaPerros{
 
         public void liberarPerro(){
 
-            System.out.print("ID del Perro: ");
+            logger.info("ID del Perro: ");
             Scanner scanner = new Scanner(System.in);
             int id = scanner.nextInt();
 

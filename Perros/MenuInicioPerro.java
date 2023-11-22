@@ -1,15 +1,19 @@
+package perro;
+
 import java.util.Scanner;
+import java.util.logging.Logger;
 
 public class MenuInicioPerro {
+    Logger logger = Logger.getLogger(getClass().getName());
 
     public static void main(String[] args) {
         ReservaPerros r = new reserva();
         Scanner s = new Scanner(System.in);
 
-        System.out.println("1. Añadir Perro");
-        System.out.println("2. Liberar Perro");
-        System.out.println("3. Ver Perros");
-        System.out.println("Seleccione una opción:");
+        logger.info("1. Añadir Perro");
+        logger.info("2. Liberar Perro");
+        logger.info("3. Ver Perros");
+        logger.info("Seleccione una opción:");
 
         int opcion = s.nextInt();
 
@@ -24,7 +28,7 @@ public class MenuInicioPerro {
                 r.verPerro();
                 break;
             default:
-                System.out.println("Opción no válida");
+                logger.info("Opción no válida");
         }
         
         s.close();

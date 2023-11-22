@@ -1,3 +1,5 @@
+package perro;
+
 import java.util.logging.Logger;
 
 public class Perro{
@@ -15,6 +17,7 @@ public class Perro{
             peso = p;
         }
         public void verPerro(){
+            logger.info("Id: ", id);
             logger.info("Especie: ", especie);
             logger.info("edad: ", edad);
             logger.info("color: ", color);
