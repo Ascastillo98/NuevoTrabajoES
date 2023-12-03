@@ -1,28 +1,29 @@
 import java.util.Scanner;
 
 public class reservaCaballos{
+        Logger logger = Logger.getLogger(getClass().getName());
         caballo[] CaballosEnReserva = new caballo[50];
         int numCaballos = 0;
 
         public void añadircaballo(){
             Scanner scanner = new Scanner(System.in);
 
-            System.out.println("Ingrese los datos del caballo:");
-            System.out.print("ID: ");
+            logger.info("Ingrese los datos del caballo:");
+            logger.info("ID: ");
             int id = scanner.nextInt();
             scanner.nextLine();  // Consumir la nueva línea pendiente después de nextInt()
 
-            System.out.print("Especie: ");
+            logger.info("Especie: ");
             String especie = scanner.nextLine();
 
-            System.out.print("Edad: ");
+            logger.info("Edad: ");
             int edad = scanner.nextInt();
             scanner.nextLine();  // Consumir la nueva línea pendiente después de nextInt()
 
-            System.out.print("Color: ");
+            logger.info("Color: ");
             String color = scanner.nextLine();
 
-            System.out.print("Peso: ");
+            logger.info("Peso: ");
             int peso = scanner.nextInt();
 
             // Crear un objeto caballo con los datos ingresados
